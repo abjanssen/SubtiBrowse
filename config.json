@@ -7,6 +7,22 @@
         "WebWorkerRpcDriver": {}
       }
     },
+    "theme": {
+      "palette": {
+        "primary": {
+          "main": "#26547c"
+        },
+        "secondary": {
+          "main": "#ffd166"
+        },
+        "tertiary": {
+          "main": "#06d6a0"
+        },
+        "quaternary": {
+          "main": "#003049"
+        }
+      }
+    },
     "logoPath": {
       "locationType": "UriLocation",
       "uri": ""
@@ -146,13 +162,13 @@
           "type": "LinearBasicDisplay",
           "displayId": "168_sorted.gff-LinearBasicDisplay",
           "height": 200,
-          "mouseover": "jexl:italics(get(feature,'name'))",
+          "mouseover": "jexl:italics(get(feature,'name')) || get(feature,'locus_tag')",
           "renderer": {
             "type": "SvgFeatureRenderer",
             "color1": "jexl:get(feature,'type')=='tRNA'?'rgb(45, 41, 138)': get(feature,'type')=='tmRNA'?'rgb(45, 41, 138)': get(feature,'type')=='rRNA'?'rgb(136, 184, 77)' : get(feature,'type')=='mRNA_region'?'grey':'rgb(215, 163, 32)'",
             "labels": {
               "name": "jexl:get(feature,'name') || get(feature,'locus_tag')"
-            }             
+            }
           }
         },
         {
@@ -162,7 +178,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{name:italics(feature.name), type:replaceuc(feature.type), Source:replaceuc(feature.source), source:undefined, phase: undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined}",
+        "feature": "jexl:{name:italics(feature.name), type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase: undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined}",
         "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
       }
     },
@@ -240,7 +256,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "New session 31/05/2024, 16:08:55",
+    "name": "SubtiBrowse",
     "margin": 0,
     "views": [
       {
