@@ -141,16 +141,16 @@
           "type": "TrixTextSearchAdapter",
           "textSearchAdapterId": "168_sorted.gff-index",
           "ixFilePath": {
-            "uri": "trix/168_sorted.gff.ix",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/168_sorted.gff.ix"
           },
           "ixxFilePath": {
-            "uri": "trix/168_sorted.gff.ixx",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/168_sorted.gff.ixx"
           },
           "metaFilePath": {
-            "uri": "trix/168_sorted.gff_meta.json",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/168_sorted.gff_meta.json"
           },
           "assemblyNames": [
             "168"
@@ -256,7 +256,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse",
+    "name": "SubtiBrowse 31/05/2024, 22:19:15",
     "margin": 0,
     "views": [
       {
@@ -264,7 +264,7 @@
         "minimized": false,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 2.3191094619666046,
+        "bpPerPx": 2.161383285302594,
         "displayedRegions": [
           {
             "refName": "168",
