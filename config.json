@@ -1,0 +1,331 @@
+{
+  "configuration": {
+    "rpc": {
+      "defaultDriver": "WebWorkerRpcDriver",
+      "drivers": {
+        "MainThreadRpcDriver": {},
+        "WebWorkerRpcDriver": {}
+      }
+    },
+    "logoPath": {
+      "locationType": "UriLocation",
+      "uri": ""
+    }
+  },
+  "plugins": [
+    {
+      "name": "NucContent",
+      "umdLoc": {
+        "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js"
+      }
+    },
+    {
+      "name": "ReplaceSpaces",
+      "umdLoc": {
+        "uri": "plugins/ReplaceSpaces.js"
+      }
+    },
+    {
+      "name": "ReplaceUnderslashCapitalize",
+      "umdLoc": {
+        "uri": "plugins/ReplaceUnderslashCapitalize.js"
+      }
+    },
+    {
+      "name": "Italicize",
+      "umdLoc": {
+        "uri": "plugins/Italicize.js"
+      }
+    },
+    {
+      "name": "QVScore",
+      "umdLoc": {
+        "uri": "plugins/QVScore.js"
+      }
+    },
+    {
+      "name": "sgRNATarget",
+      "umdLoc": {
+        "uri": "plugins/sgRNATarget.js"
+      }
+    },
+    {
+      "name": "Capital",
+      "umdLoc": {
+        "uri": "plugins/Capital.js"
+      }
+    },
+    {
+      "name": "Inference",
+      "umdLoc": {
+        "uri": "plugins/Inference.js"
+      }
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "168",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "168-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "./data/168/168.fna"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "./data/168/168.fna.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "168-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "168-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "168_sorted.gff",
+      "name": "Coding features",
+      "assemblyNames": [
+        "168"
+      ],
+      "category": [
+        "Annotation"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/168/168_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/168/168_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "168_sorted.gff-index",
+          "ixFilePath": {
+            "uri": "trix/168_sorted.gff.ix",
+            "locationType": "UriLocation"
+          },
+          "ixxFilePath": {
+            "uri": "trix/168_sorted.gff.ixx",
+            "locationType": "UriLocation"
+          },
+          "metaFilePath": {
+            "uri": "trix/168_sorted.gff_meta.json",
+            "locationType": "UriLocation"
+          },
+          "assemblyNames": [
+            "168"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "168_sorted.gff-LinearBasicDisplay",
+          "height": 200,
+          "mouseover": "jexl:italics(get(feature,'name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "jexl:get(feature,'type')=='tRNA'?'rgb(45, 41, 138)': get(feature,'type')=='tmRNA'?'rgb(45, 41, 138)': get(feature,'type')=='rRNA'?'rgb(136, 184, 77)' : get(feature,'type')=='mRNA_region'?'grey':'rgb(215, 163, 32)'",
+            "labels": {
+              "name": "jexl:get(feature,'name') || get(feature,'locus_tag')"
+            }             
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "168_sorted.gff-LinearArcDisplay",
+          "height": 200
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{name:italics(feature.name), type:replaceuc(feature.type), Source:replaceuc(feature.source), source:undefined, phase: undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined}",
+        "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
+      }
+    },
+    {
+      "type": "NucContentTrack",
+      "trackId": "gc_content_168",
+      "name": "GC content",
+      "assemblyNames": [
+        "168"
+      ],
+      "category": [
+        "Genome characteristics",
+        "Miscellaneous"
+      ],
+      "adapter": {
+        "type": "NucContentAdapter",
+        "sequenceAdapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/168/168.fna.gz"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/168/168.fna.gz.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          },
+          "gziLocation": {
+            "locationType": "UriLocation",
+            "uri": "data/168/168.fna.gz.gzi"
+          }
+        },
+        "windowSize": 200,
+        "windowOverlap": 10
+      },
+      "displays": [
+        {
+          "type": "NucContentDisplay",
+          "displayId": "gc_content_dynamic_168-NucContentDisplay",
+          "minScore": 0,
+          "maxScore": 0.8
+        }
+      ]
+    }
+  ],
+  "internetAccounts": [],
+  "aggregateTextSearchAdapters": [],
+  "connections": [],
+  "defaultSession": {
+    "drawerPosition": "left",
+    "drawerWidth": 384,
+    "widgets": {
+      "GridBookmark": {
+        "id": "GridBookmark",
+        "type": "GridBookmarkWidget"
+      },
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "view": "JCFaygF3TSEHpjjRdvyYH",
+        "faceted": {
+          "filterText": "",
+          "showSparse": false,
+          "showFilters": true,
+          "showOptions": false,
+          "panelWidth": 400
+        }
+      }
+    },
+    "activeWidgets": {
+      "hierarchicalTrackSelector": "hierarchicalTrackSelector"
+    },
+    "minimized": false,
+    "id": "som28W8AbRdxtMtSElJqD",
+    "name": "New session 31/05/2024, 16:08:55",
+    "margin": 0,
+    "views": [
+      {
+        "id": "JCFaygF3TSEHpjjRdvyYH",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": 0,
+        "bpPerPx": 2.3191094619666046,
+        "displayedRegions": [
+          {
+            "refName": "168",
+            "start": 0,
+            "end": 4215623,
+            "reversed": false,
+            "assemblyName": "168"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "JAoonQylHY-iVsJTc8Ej8",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "168-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "iKz01UHNOTAa2zzM9mSRB",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 120,
+                "configuration": "168-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "gvKJad2NEPMJdCMt7q3xf",
+            "type": "FeatureTrack",
+            "configuration": "168_sorted.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "NFyMxXU9qg6qnwHrmWPE6",
+                "type": "LinearBasicDisplay",
+                "configuration": "168_sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "PsQzmq15x3vi0T-JlfhjO",
+            "type": "NucContentTrack",
+            "configuration": "gc_content_168",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "A2IANjmbpl1tlJP4s-iN0",
+                "type": "NucContentDisplay",
+                "configuration": "gc_content_dynamic_168-NucContentDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": false,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      }
+    ],
+    "sessionTracks": [],
+    "sessionAssemblies": [],
+    "temporaryAssemblies": [],
+    "connectionInstances": [],
+    "sessionConnections": [],
+    "focusedViewId": "JCFaygF3TSEHpjjRdvyYH",
+    "sessionPlugins": []
+  }
+}
