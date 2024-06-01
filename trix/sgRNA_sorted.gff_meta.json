@@ -1,12 +1,12 @@
 {
-  "dateCreated": "2024-06-01T08:29:40.802Z",
+  "dateCreated": "2024-06-01T08:30:30.095Z",
   "tracks": [
     {
-      "trackId": "168_sorted.gff",
+      "trackId": "sgRNA_sorted.gff",
       "attributesIndexed": [
-        "name",
-        "gene",
-        "locus_tag"
+        "Name",
+        "ID",
+        "name"
       ],
       "excludedTypes": [
         "CDS",
@@ -17,12 +17,12 @@
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
           "locationType": "UriLocation",
-          "uri": "data/168/168_sorted.gff.gz"
+          "uri": "data/168/sgRNA_sorted.gff.gz"
         },
         "index": {
           "location": {
             "locationType": "UriLocation",
-            "uri": "data/168/168_sorted.gff.gz.tbi"
+            "uri": "data/168/sgRNA_sorted.gff.gz.tbi"
           }
         }
       }

@@ -183,6 +183,74 @@
       }
     },
     {
+      "type": "FeatureTrack",
+      "trackId": "sgRNA_sorted.gff",
+      "name": "sgRNAs",
+      "assemblyNames": [
+        "168"
+      ],
+      "category": [
+        "CRISPRi"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "data/168/sgRNA_sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "data/168/sgRNA_sorted.gff.gz.tbi"
+          }
+        }
+      },
+      "textSearching": {
+        "indexingAttributes": [
+          "Name",
+          "ID",
+          "name"
+        ],
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "sgRNA_sorted.gff-index",
+          "ixFilePath": {
+            "uri": "trix/sgRNA_sorted.gff.ix",
+            "locationType": "UriLocation"
+          },
+          "ixxFilePath": {
+            "uri": "trix/sgRNA_sorted.gff.ixx",
+            "locationType": "UriLocation"
+          },
+          "metaFilePath": {
+            "uri": "trix/sgRNA_sorted.gff_meta.json",
+            "locationType": "UriLocation"
+          },
+          "assemblyNames": [
+            "168"
+          ]
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "sgRNA_sorted.gff-LinearBasicDisplay",
+          "mouseover": "jexl:sgrnatarget(get(feature,'target_gene_name'))",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "rgb(102, 194, 165)"
+          }
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "sgRNA_sorted.gff-LinearArcDisplay"
+        }
+      ],
+      "formatDetails": {
+        "feature": "jexl:{Source:'V. de Bakker', source:undefined, id:undefined, phase:undefined, Target_locus_tag:feature.target_locus_tag, target_locus_tag:undefined, Target_gene_name:italics(feature.target_gene_name), target_gene_name:undefined}"
+      }
+    },
+    {
       "type": "NucContentTrack",
       "trackId": "gc_content_168",
       "name": "GC content",
