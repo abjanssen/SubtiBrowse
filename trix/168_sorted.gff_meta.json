@@ -1,12 +1,15 @@
 {
-  "dateCreated": "2024-06-01T08:29:40.802Z",
+  "dateCreated": "2024-06-02T18:05:30.439Z",
   "tracks": [
     {
       "trackId": "168_sorted.gff",
       "attributesIndexed": [
         "name",
         "gene",
-        "locus_tag"
+        "locus_tag",
+        "bsubtilis_locus_tag",
+        "subtiwiki_name",
+        "ncbi_name"
       ],
       "excludedTypes": [
         "CDS",

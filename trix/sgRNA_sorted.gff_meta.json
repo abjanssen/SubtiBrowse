@@ -1,5 +1,5 @@
 {
-  "dateCreated": "2024-06-01T08:30:30.095Z",
+  "dateCreated": "2024-06-02T18:05:31.104Z",
   "tracks": [
     {
       "trackId": "sgRNA_sorted.gff",
@@ -11,7 +11,8 @@
       "excludedTypes": [
         "CDS",
         "exon",
-        "id"
+        "id",
+        "name"
       ],
       "adapterConf": {
         "type": "Gff3TabixAdapter",

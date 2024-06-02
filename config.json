@@ -54,6 +54,12 @@
       }
     },
     {
+      "name": "RemoveQuotes",
+      "umdLoc": {
+        "uri": "plugins/RemoveQuotes.js"
+      }
+    },
+    {
       "name": "QVScore",
       "umdLoc": {
         "uri": "plugins/QVScore.js"
@@ -178,7 +184,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{name:italics(feature.name), type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase: undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined}",
+        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Alias:italics(feature.alias), alias:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined, Locus_tag_168:feature.bsubtilis_locus_tag, bsubtilis_locus_tag:undefined, Subtiwiki_name:italics(feature.subtiwiki_name), subtiwiki_name:undefined, NCBI_name:italics(feature.ncbi_name), ncbi_name:undefined, UniProt:feature.uniprot_link != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot_link+'>'+feature.uniprot_link+'</a>' : null, uniprot_link:undefined, SubtiWiki:feature.subtiwiki_link != null ? '<a href=https://subtiwiki.uni-goettingen.de/v4/gene?id='+feature.subtiwiki_link+'>'+'SubtiWiki'+'</a>' : null, subtiwiki_link:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined}",
         "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
       }
     },
