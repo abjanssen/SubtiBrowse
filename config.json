@@ -168,12 +168,12 @@
           "type": "LinearBasicDisplay",
           "displayId": "168_sorted.gff-LinearBasicDisplay",
           "height": 200,
-          "mouseover": "jexl:italics(get(feature,'name')) || get(feature,'locus_tag')",
+          "mouseover": "jexl:italics(get(feature,'subtiwiki_name')) || get(feature,'bsubtilis_locus_tag') || get(feature,'locus_tag')",
           "renderer": {
             "type": "SvgFeatureRenderer",
             "color1": "jexl:get(feature,'type')=='tRNA'?'rgb(45, 41, 138)': get(feature,'type')=='tmRNA'?'rgb(45, 41, 138)': get(feature,'type')=='rRNA'?'rgb(136, 184, 77)' : get(feature,'type')=='mRNA_region'?'grey':'rgb(215, 163, 32)'",
             "labels": {
-              "name": "jexl:get(feature,'name') || get(feature,'locus_tag')"
+              "name": "jexl:get(feature,'subtiwiki_name') || get(feature,'bsubtilis_locus_tag') || get(feature,'locus_tag')"
             }
           }
         },
@@ -184,7 +184,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Gene:italics(feature.gene), gene:undefined, Alias:italics(feature.alias), alias:undefined, Locus_tag:feature.locus_tag, locus_tag:undefined, Locus_tag_168:feature.bsubtilis_locus_tag, bsubtilis_locus_tag:undefined, Subtiwiki_name:italics(feature.subtiwiki_name), subtiwiki_name:undefined, NCBI_name:italics(feature.ncbi_name), ncbi_name:undefined, UniProt:feature.uniprot_link != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot_link+'>'+feature.uniprot_link+'</a>' : null, uniprot_link:undefined, SubtiWiki:feature.subtiwiki_link != null ? '<a href=https://subtiwiki.uni-goettingen.de/v4/gene?id='+feature.subtiwiki_link+'>'+'SubtiWiki'+'</a>' : null, subtiwiki_link:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined}",
+        "feature": "jexl:{name:italics(feature.name),type:capital(replaceuc(feature.type)), Source:capital(replaceuc(feature.source)), source:undefined, phase:undefined, id:undefined, Prokka_gene_name:italics(feature.gene), gene:undefined, Alias:italics(feature.alias), alias:undefined, Prokka_locus_tag:feature.locus_tag, locus_tag:undefined, Locus_tag_168:feature.bsubtilis_locus_tag, bsubtilis_locus_tag:undefined, Subtiwiki_name:italics(feature.subtiwiki_name), subtiwiki_name:undefined, NCBI_name:italics(feature.ncbi_name), ncbi_name:undefined, UniProt:feature.uniprot_link != null ? '<a href=https://www.uniprot.org/uniprotkb/'+feature.uniprot_link+'>'+feature.uniprot_link+'</a>' : null, uniprot_link:undefined, SubtiWiki:feature.subtiwiki_link != null ? '<a href=https://subtiwiki.uni-goettingen.de/v4/gene?id='+feature.subtiwiki_link+'>'+'SubtiWiki'+'</a>' : null, FoldSeek: feature.uniprot_link != null ? '<a href=https://search.foldseek.com/search?accession='+feature.uniprot_link+'&source=AlphaFoldDB>'+'FoldSeek'+'</a>' : null, subtiwiki_link:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined}",
         "subfeatures": "jexl:{accession:undefined, name:italics(feature.name), type:capital(feature.type), Source:replaceuc(feature.source), source:undefined, phase:undefined, id:undefined, parent:undefined, EC_number: feature.ec_number != null ? '<a href=https://enzyme.expasy.org/EC/'+feature.ec_number+'>'+feature.ec_number+'</a>' : null , ec_number:undefined, Gene:italics(feature.gene), gene:undefined, Inference:feature.inference != null ? capital(inference(feature.inference)) : null, inference:undefined, locus_tag:undefined, Product:capital(feature.product), product:undefined, protein_id:undefined, RFAM: feature.accession != null ? '<a href=https://rfam.org/family/'+feature.accession+'>'+feature.accession+'</a>' : null, note:undefined, Note: feature.note != null ? removequotes(feature.note): null}"
       }
     },
@@ -376,7 +376,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse 31/05/2024, 22:19:15",
+    "name": "SubtiBrowse (v0.9)",
     "margin": 0,
     "views": [
       {
