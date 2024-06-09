@@ -4549,7 +4549,7 @@ bsu_misc_rna_49 ["168%3A1111900..1112114"|"168_sorted.gff"|"JFEPDHJK_01151"|"BSU
 bsu_misc_rna_5 ["168%3A4017089..4017259"|"168_sorted.gff"|"JFEPDHJK_04198"|"BSU_misc_RNA_5"|"glmS%20ribozyme"|"glmSA"],1
 bsu_misc_rna_50 ["168%3A1087934..1088072"|"168_sorted.gff"|"JFEPDHJK_01126"|"BSU_misc_RNA_50"|"BSU_misc_RNA_50"|"mswG"],1
 bsu_misc_rna_51 ["168%3A1038061..1038162"|"168_sorted.gff"|"JFEPDHJK_01058"|"BSU_misc_RNA_51"|"BSU_misc_RNA_51"|"tswC"],1
-bsu_misc_rna_52 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],1
+bsu_misc_rna_52 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],1
 bsu_misc_rna_53 ["168%3A852764..852870"|"168_sorted.gff"|"JFEPDHJK_00874"|"BSU_misc_RNA_53"|"BSU_misc_RNA_53"|"mswH"],1
 bsu_misc_rna_54 ["168%3A795919..796098"|"168_sorted.gff"|"JFEPDHJK_00808"|"BSU_misc_RNA_54"|"BSU_misc_RNA_54"|"kswB"],1
 bsu_misc_rna_55 ["168%3A766196..766555"|"168_sorted.gff"|"ssrA"|"JFEPDHJK_00781"|"BSU_misc_RNA_55"|"ssrA"|"ssrA"],1
@@ -4566,7 +4566,7 @@ bsu_misc_rna_64 ["168%3A3742777..3742863"|"168_sorted.gff"|"JFEPDHJK_03948"|"BSU
 bsu_misc_rna_67 ["168%3A2983731..2983845"|"168_sorted.gff"|"JFEPDHJK_03156"|"BSU_misc_RNA_67"|"roxS"|"roxS"],1
 bsu_misc_rna_68 ["168%3A2821489..2821654"|"168_sorted.gff"|"JFEPDHJK_02958"|"BSU_misc_RNA_68"|"swmG"|"swmG"],1
 bsu_misc_rna_69 ["168%3A2733629..2733712"|"168_sorted.gff"|"JFEPDHJK_02864"|"BSU_misc_RNA_69"|"fsrA"|"fsrA"],1
-bsu_misc_rna_7 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],1
+bsu_misc_rna_7 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],1
 bsu_misc_rna_70 ["168%3A2682995..2683199"|"168_sorted.gff"|"JFEPDHJK_02809"|"BSU_misc_RNA_70%20%20BSU_14629"|"srrA%20%20rgpA"],1
 bsu_misc_rna_72 ["168%3A2301998..2302277"|"168_sorted.gff"|"JFEPDHJK_02474"|"BSU_misc_RNA_72"|"surA"|"surA"],1
 bsu_misc_rna_73 ["168%3A2299688..2299767"|"168_sorted.gff"|"JFEPDHJK_02469"|"BSU_misc_RNA_73"|"ncrF"|"ncrF"],1
@@ -4710,7 +4710,7 @@ btuf ["168%3A812830..813774"|"168_sorted.gff"|"btuF"|"JFEPDHJK_00828"|"BSU_33180
 buk ["168%3A1714635..1715720"|"168_sorted.gff"|"buk2"|"JFEPDHJK_01804"|"BSU_24070"|"buk"|"buk"],1
 buk2 ["168%3A1714635..1715720"|"168_sorted.gff"|"buk2"|"JFEPDHJK_01804"|"BSU_24070"|"buk"|"buk"],1
 bznd ["168%3A951130..951861"|"168_sorted.gff"|"yueD"|"JFEPDHJK_00965"|"BSU_31840"|"yueD"|"bznD"],1
-c-di-amp ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],2
+c-di-amp ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],2
 caad ["168%3A2652874..2653206"|"168_sorted.gff"|"caaD"|"JFEPDHJK_02779"|"BSU_14920"|"ctaF"|"ctaF"],1
 cada ["168%3A776315..778414"|"168_sorted.gff"|"cadA"|"JFEPDHJK_00792"|"BSU_33490"|"cadA"|"cadA"],1
 cadi ["168%3A1560012..1560452"|"168_sorted.gff"|"cadI"|"JFEPDHJK_01623"|"BSU_25800"|"yqcK"|"yqcK"],1
@@ -6863,7 +6863,7 @@ jfepdhjk_01043 ["168%3A1025399..1026433"|"168_sorted.gff"|"lytG"|"JFEPDHJK_01043
 jfepdhjk_01044 ["168%3A1026542..1026805"|"168_sorted.gff"|"JFEPDHJK_01044"|"BSU_31110"|"yubF"|"yubF"],1
 jfepdhjk_01045 ["168%3A1026841..1028178"|"168_sorted.gff"|"ktrB_1"|"JFEPDHJK_01045"|"BSU_31100"|"ktrB"|"ktrB"],1
 jfepdhjk_01046 ["168%3A1028185..1028853"|"168_sorted.gff"|"ktrA_1"|"JFEPDHJK_01046"|"BSU_31090"|"ktrA"|"ktrA"],1
-jfepdhjk_01047 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"],1 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],2
+jfepdhjk_01047 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"],1 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],2
 jfepdhjk_01048 ["168%3A1029219..1029764"|"168_sorted.gff"|"bslA"|"JFEPDHJK_01048"|"BSU_31080"|"bslA"|"bslA"],1
 jfepdhjk_01049 ["168%3A1029962..1030504"|"168_sorted.gff"|"opcR_3"|"JFEPDHJK_01049"|"BSU_31070"|"gbsR"|"gbsR"],1
 jfepdhjk_01050 ["168%3A1030703..1032175"|"168_sorted.gff"|"gbsA"|"JFEPDHJK_01050"|"BSU_31060"|"gbsA"|"gbsA"],1
@@ -9754,7 +9754,7 @@ jfepdhjk_03934 ["168%3A3726233..3726499"|"168_sorted.gff"|"JFEPDHJK_03934"|"BSU_
 jfepdhjk_03935 ["168%3A3726722..3728446"|"168_sorted.gff"|"ydaP"|"JFEPDHJK_03935"|"BSU_04340"|"ydaP"|"poxB"],1
 jfepdhjk_03936 ["168%3A3728513..3728962"|"168_sorted.gff"|"rppH"|"JFEPDHJK_03936"|"BSU_04330"|"mutT"|"nudT"],1
 jfepdhjk_03937 ["168%3A3729021..3730844"|"168_sorted.gff"|"kimA"|"JFEPDHJK_03937"|"BSU_04320"|"kimA"|"kimA"],1
-jfepdhjk_03938 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],2
+jfepdhjk_03938 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],2
 jfepdhjk_03939 ["168%3A3731320..3733440"|"168_sorted.gff"|"JFEPDHJK_03939"|"BSU_04310"|"ydaN"|"ydaN"],1
 jfepdhjk_03940 ["168%3A3733437..3734699"|"168_sorted.gff"|"JFEPDHJK_03940"|"BSU_04300"|"ydaM"|"ydaM"],1
 jfepdhjk_03941 ["168%3A3734692..3736422"|"168_sorted.gff"|"JFEPDHJK_03941"|"BSU_04290"|"ydaL"|"ydaL"],1
@@ -10275,7 +10275,7 @@ khtt ["168%3A3156350..3156847"|"168_sorted.gff"|"khtT_2"|"JFEPDHJK_03329"|"BSU_0
 khtt_1 ["168%3A1390526..1391023"|"168_sorted.gff"|"khtT_1"|"JFEPDHJK_01429"|"BSU_27640"|"yrvC"|"yrvC"],1
 khtt_2 ["168%3A3156350..3156847"|"168_sorted.gff"|"khtT_2"|"JFEPDHJK_03329"|"BSU_09860"|"khtT"|"khtT"],1
 khtu ["168%3A3156854..3158071"|"168_sorted.gff"|"khtU"|"JFEPDHJK_03330"|"BSU_09850"|"khtU"|"khtU"],1
-kima ["168%3A3729021..3730844"|"168_sorted.gff"|"kimA"|"JFEPDHJK_03937"|"BSU_04320"|"kimA"|"kimA"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],2
+kima ["168%3A3729021..3730844"|"168_sorted.gff"|"kimA"|"JFEPDHJK_03937"|"BSU_04320"|"kimA"|"kimA"],1 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],2
 kina ["168%3A2745423..2747243"|"168_sorted.gff"|"kinA"|"JFEPDHJK_02877"|"BSU_13990"|"kinA"|"kinA"],1
 kinb ["168%3A985914..987200"|"168_sorted.gff"|"sasA_3"|"JFEPDHJK_01005"|"BSU_31450"|"kinB"|"kinB"],1
 kinc ["168%3A2697650..2698936"|"168_sorted.gff"|"sasA_4"|"JFEPDHJK_02824"|"BSU_14490"|"kinC"|"kinC"],1
@@ -10286,7 +10286,7 @@ kre ["168%3A2742245..2742709"|"168_sorted.gff"|"JFEPDHJK_02873"|"BSU_14020"|"kre
 ksga ["168%3A4165766..4166644"|"168_sorted.gff"|"rsmA"|"JFEPDHJK_04374"|"BSU_00420"|"ksgA"|"rsmA"],1
 kswb ["168%3A795919..796098"|"168_sorted.gff"|"JFEPDHJK_00808"|"BSU_misc_RNA_54"|"BSU_misc_RNA_54"|"kswB"],1
 kswc ["168%3A1306217..1306396"|"168_sorted.gff"|"JFEPDHJK_01339"|"BSU_misc_RNA_46"|"L-box%20riboswitch"|"kswC"],1
-ktra ["168%3A1028185..1028853"|"168_sorted.gff"|"ktrA_1"|"JFEPDHJK_01046"|"BSU_31090"|"ktrA"|"ktrA"],1 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],2
+ktra ["168%3A1028185..1028853"|"168_sorted.gff"|"ktrA_1"|"JFEPDHJK_01046"|"BSU_31090"|"ktrA"|"ktrA"],1 ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],2
 ktra_1 ["168%3A1028185..1028853"|"168_sorted.gff"|"ktrA_1"|"JFEPDHJK_01046"|"BSU_31090"|"ktrA"|"ktrA"],1
 ktra_2 ["168%3A2696073..2696738"|"168_sorted.gff"|"ktrA_2"|"JFEPDHJK_02822"|"BSU_14510"|"ktrC"|"ktrC"],1
 ktrb ["168%3A1026841..1028178"|"168_sorted.gff"|"ktrB_1"|"JFEPDHJK_01045"|"BSU_31100"|"ktrB"|"ktrB"],1
@@ -11388,7 +11388,7 @@ ribd ["168%3A1785924..1787009"|"168_sorted.gff"|"ribD"|"JFEPDHJK_01887"|"BSU_232
 ribe ["168%3A1787020..1787667"|"168_sorted.gff"|"ribE"|"JFEPDHJK_01888"|"BSU_23270"|"ribE"|"ribE"],1
 ribf ["168%3A2478485..2479435"|"168_sorted.gff"|"ribF"|"JFEPDHJK_02595"|"BSU_16670"|"ribC"|"ribC"],1
 ribh ["168%3A1788911..1789375"|"168_sorted.gff"|"ribH"|"JFEPDHJK_01890"|"BSU_23250"|"ribH"|"ribH"],1
-riboswitch ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],1 ["168%3A1306217..1306396"|"168_sorted.gff"|"JFEPDHJK_01339"|"BSU_misc_RNA_46"|"L-box%20riboswitch"|"kswC"],2 ["168%3A2840832..2840943"|"168_sorted.gff"|"JFEPDHJK_02983"|"BSU_misc_RNA_16"|"YkkC%20riboswitch"|"gdwA"],3 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],4
+riboswitch ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],1 ["168%3A1306217..1306396"|"168_sorted.gff"|"JFEPDHJK_01339"|"BSU_misc_RNA_46"|"L-box%20riboswitch"|"kswC"],2 ["168%3A2840832..2840943"|"168_sorted.gff"|"JFEPDHJK_02983"|"BSU_misc_RNA_16"|"YkkC%20riboswitch"|"gdwA"],3 ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],4
 ribozyme ["168%3A4017089..4017259"|"168_sorted.gff"|"JFEPDHJK_04198"|"BSU_misc_RNA_5"|"glmS%20ribozyme"|"glmSA"],1
 ribr ["168%3A1215591..1216283"|"168_sorted.gff"|"ribR"|"JFEPDHJK_01253"|"BSU_29300"|"ribR"|"ribR"],1
 ribt ["168%3A1789488..1789862"|"168_sorted.gff"|"ribT"|"JFEPDHJK_01891"|"BSU_23240"|"ribT"|"ypzK"],1
@@ -11983,8 +11983,8 @@ sunt ["168%3A1947804..1949921"|"168_sorted.gff"|"lagD"|"JFEPDHJK_02078"|"BSU_214
 sura ["168%3A2301998..2302277"|"168_sorted.gff"|"JFEPDHJK_02474"|"BSU_misc_RNA_72"|"surA"|"surA"],1
 surc ["168%3A1591156..1591316"|"168_sorted.gff"|"JFEPDHJK_01658"|"BSU_misc_RNA_79"|"surC"|"surC"],1
 surf ["168%3A1443382..1443487"|"168_sorted.gff"|"JFEPDHJK_01483"|"BSU_misc_RNA_82"|"rnaC"|"surF"],1
-swao ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"c-di-AMP%20riboswitch%20%20kimA"|"swaO"],1
-swda ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"c-di-AMP%20riboswitch%20%20ktrA"|"swdA"],1
+swao ["168%3A3731041..3731184"|"168_sorted.gff"|"JFEPDHJK_03938"|"BSU_misc_RNA_7"|"kimA%20c-di-AMP%20riboswitch"|"swaO"],1
+swda ["168%3A1028926..1029074"|"168_sorted.gff"|"JFEPDHJK_01047"|"BSU_misc_RNA_52"|"ktrA%20c-di-AMP%20riboswitch"|"swdA"],1
 swec ["168%3A1640088..1640552"|"168_sorted.gff"|"mltG_2"|"JFEPDHJK_01712"|"BSU_24940"|"sweC"|"yqzC"],1
 swed ["168%3A1640549..1640902"|"168_sorted.gff"|"JFEPDHJK_01713"|"BSU_24930"|"sweD"|"yqzD"],1
 swga ["168%3A1667663..1667764"|"168_sorted.gff"|"JFEPDHJK_01751"|"BSU_misc_RNA_37"|"swgA"],1
