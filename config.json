@@ -247,7 +247,7 @@
         {
           "type": "LinearBasicDisplay",
           "displayId": "sgRNA_sorted.gff-LinearBasicDisplay",
-          "mouseover": "jexl:sgrnatarget(subtiwiki_names_targets != NA ? get(feature,'subtiwiki_names_targets') || get(feature,'subtiwiki_locus_tag_targets') : get(feature,'target_gene_name'))",
+          "mouseover": "jexl:sgrnatarget(get(feature,'subtiwiki_names_targets') != NA ? get(feature,'subtiwiki_names_targets') || get(feature,'subtiwiki_locus_tag_targets') : get(feature,'target_gene_name') || get(feature,'target_locus_tag'))",
           "renderer": {
             "type": "SvgFeatureRenderer",
             "color1": "rgb(102, 194, 165)"
@@ -382,7 +382,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.11)",
+    "name": "SubtiBrowse (v0.12)",
     "margin": 0,
     "views": [
       {
