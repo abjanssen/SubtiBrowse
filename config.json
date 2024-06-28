@@ -25,7 +25,7 @@
     },
     "logoPath": {
       "locationType": "UriLocation",
-      "uri": "data/SB_logo.svg"
+      "uri": "data/SB_Logo.svg"
     }
   },
   "plugins": [
@@ -382,7 +382,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.14)",
+    "name": "SubtiBrowse (v0.15)",
     "margin": 0,
     "views": [
       {
