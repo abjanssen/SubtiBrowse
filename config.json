@@ -40,7 +40,7 @@
       "umdLoc": {
         "uri": "plugins/RemoveCOG.js"
       }
-    },    
+    },
     {
       "name": "ReplaceSpaces",
       "umdLoc": {
@@ -227,16 +227,16 @@
           "type": "TrixTextSearchAdapter",
           "textSearchAdapterId": "sgRNA_sorted.gff-index",
           "ixFilePath": {
-            "uri": "trix/sgRNA_sorted.gff.ix",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/sgRNA_sorted.gff.ix"
           },
           "ixxFilePath": {
-            "uri": "trix/sgRNA_sorted.gff.ixx",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/sgRNA_sorted.gff.ixx"
           },
           "metaFilePath": {
-            "uri": "trix/sgRNA_sorted.gff_meta.json",
-            "locationType": "UriLocation"
+            "locationType": "UriLocation",
+            "uri": "trix/sgRNA_sorted.gff_meta.json"
           },
           "assemblyNames": [
             "168"
@@ -382,7 +382,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.15)",
+    "name": "SubtiBrowse (v0.16)",
     "margin": 0,
     "views": [
       {
@@ -390,13 +390,13 @@
         "minimized": false,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 2.161383285302594,
+        "bpPerPx": 3.0413625304136254,
         "displayedRegions": [
           {
+            "reversed": false,
             "refName": "168",
             "start": 0,
             "end": 4215623,
-            "reversed": false,
             "assemblyName": "168"
           }
         ],
@@ -410,7 +410,7 @@
               {
                 "id": "iKz01UHNOTAa2zzM9mSRB",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 120,
+                "heightPreConfig": 50,
                 "configuration": "168-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -443,6 +443,7 @@
                 "configuration": "gc_content_dynamic_168-NucContentDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
+                "color": "rgb(27, 158, 119)",
                 "constraints": {}
               }
             ]
