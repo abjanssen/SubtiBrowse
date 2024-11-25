@@ -265,7 +265,7 @@
         }
       ],
       "formatDetails": {
-        "feature": "jexl:{Source:'V. de Bakker', Target_Prokka_gene_name:feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, Target_NCBI_gene_name:italics(feature.ncbi_names_targets), Target_168_gene_name:italics(feature.subtiwiki_names_targets), Target_Prokka_locus_tag:feature.target_locus_tag, Target_168_locus_tags:feature.subtiwiki_locus_tag_targets, subtiwiki_locus_tag_targets:undefined, source:undefined, id:undefined, subtiwiki_names_targets:undefined, ncbi_names_targets:undefined, target_gene_name:undefined, target_locus_tag:undefined, phase:undefined}"
+        "feature": "jexl:{Source:'V. de Bakker', score:undefined, Target_Prokka_gene_name:feature.target_gene_name != feature.target_locus_tag ? italics(feature.target_gene_name) : null, Target_NCBI_gene_name:italics(feature.ncbi_names_targets), Target_168_gene_name:italics(feature.subtiwiki_names_targets), Target_Prokka_locus_tag:feature.target_locus_tag, Target_168_locus_tags:feature.subtiwiki_locus_tag_targets, subtiwiki_locus_tag_targets:undefined, source:undefined, id:undefined, subtiwiki_names_targets:undefined, ncbi_names_targets:undefined, target_gene_name:undefined, target_locus_tag:undefined, phase:undefined}"
       }
     },
     {
@@ -388,7 +388,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.25)",
+    "name": "SubtiBrowse (v0.26)",
     "margin": 0,
     "views": [
       {
