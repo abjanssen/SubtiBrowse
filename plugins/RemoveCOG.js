@@ -1,6 +1,9 @@
 // RemoveCOG.js
 ;(function () {
   class MyPlugin {
+    name = 'TextFormattingPlugin'
+    version = 'COGFormatting'
+    
     install() {}
     configure(pluginManager) {
       pluginManager.jexl.addFunction('removecog', feature => {

@@ -1,6 +1,9 @@
 // RemoveQuotes.js
 ;(function () {
   class MyPlugin {
+    name = 'TextFormattingPlugin'
+    version = 'QuotesFormatting'
+      
     install() {}
     configure(pluginManager) {
       pluginManager.jexl.addFunction('removequotes', feature => {

@@ -1,6 +1,9 @@
 // RemoveUnderslash.js
 ;(function () {
   class MyPlugin {
+    name = 'TextFormattingPlugin'
+    version = 'RemoveUnderslashFormatting'
+    
     install() {}
     configure(pluginManager) {
       pluginManager.jexl.addFunction('removeus', feature => {
