@@ -34,7 +34,7 @@
       "esmLoc": {
         "uri": "plugins/ReferenceContactsWidget.js"
       }
-    },    
+    },  
     {
       "name": "NucContent",
       "umdLoc": {
@@ -394,7 +394,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.49)",
+    "name": "SubtiBrowse (v0.50)",
     "margin": 0,
     "views": [
       {
