@@ -30,7 +30,6 @@
   },
   "plugins": [
   { "name": "MsaView", "umdLoc": { "uri": "plugins/jbrowse-plugin-msaview.umd.production.min.js" } },
-  { "name": "NucContent", "umdLoc": { "uri": "plugins/jbrowsepluginnuccontent.umd.production.min.js" } },
   { "name": "Protein3d", "umdLoc": { "uri": "plugins/jbrowse-plugin-protein3d.umd.production.min.js" } },
   { "name": "ReferenceContactsWidget", "esmLoc": { "uri": "plugins/ReferenceContactsWidget.js" } },
   { "name": "Inference", "umdLoc": { "uri": "plugins/Inference.js" } },
@@ -263,7 +262,7 @@
       }
     },
     {
-      "type": "NucContentTrack",
+      "type": "GCContentTrack",
       "trackId": "gc_content_168",
       "name": "GC content",
       "assemblyNames": [
@@ -274,35 +273,24 @@
         "Miscellaneous"
       ],
       "adapter": {
-        "type": "NucContentAdapter",
-        "sequenceAdapter": {
-          "type": "BgzipFastaAdapter",
-          "fastaLocation": {
-            "locationType": "UriLocation",
-            "uri": "data/168/168.fna.gz"
-          },
-          "faiLocation": {
-            "locationType": "UriLocation",
-            "uri": "data/168/168.fna.gz.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
-          },
-          "gziLocation": {
-            "locationType": "UriLocation",
-            "uri": "data/168/168.fna.gz.gzi"
-          }
+        "type": "IndexedFastaAdapter",
+        "fastaLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/168/168.fna"
         },
-        "windowSize": 200,
-        "windowOverlap": 10
+        "faiLocation": {
+          "locationType": "UriLocation",
+          "uri": "./data/168/168.fna.fai"
+        },
+        "metadataLocation": {
+          "locationType": "UriLocation",
+          "uri": "/path/to/fa.metadata.yaml"
+        }
       },
       "displays": [
         {
-          "type": "NucContentDisplay",
-          "displayId": "gc_content_dynamic_168-NucContentDisplay",
-          "minScore": 0,
-          "maxScore": 0.8
+          "type": "LinearGCContentTrackDisplay",
+          "displayId": "gc_content_168-LinearGCContentTrackDisplay"
         }
       ]
     }
@@ -386,19 +374,25 @@
             ]
           },
           {
-            "id": "PsQzmq15x3vi0T-JlfhjO",
-            "type": "NucContentTrack",
+            "id": "VcP339XrwELEbzw14Y9f0",
+            "type": "GCContentTrack",
             "configuration": "gc_content_168",
             "minimized": false,
+            "pinned": false,
             "displays": [
               {
-                "id": "A2IANjmbpl1tlJP4s-iN0",
-                "type": "NucContentDisplay",
-                "configuration": "gc_content_dynamic_168-NucContentDisplay",
+                "id": "j4N3EAiK2tC1KfjZwIiX-",
+                "type": "LinearGCContentTrackDisplay",
+                "configuration": "gc_content_168-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
                 "color": "rgb(27, 158, 119)",
-                "constraints": {}
+                "constraints": {
+                  "max": 1,
+                  "min": 0
+                },
+                "windowSize": 200,
+                "windowDelta": 20
               }
             ]
           }
