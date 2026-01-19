@@ -287,12 +287,17 @@
           "uri": "/path/to/fa.metadata.yaml"
         }
       },
-      "displays": [
-        {
-          "type": "LinearGCContentTrackDisplay",
-          "displayId": "gc_content_168-LinearGCContentTrackDisplay"
-        }
-      ]
+            "displays": [
+              {
+                "id": "j4N3EAiK2tC1KfjZwIiX-",
+                "type": "LinearGCContentTrackDisplay",
+                "configuration": "gc_content_168-LinearGCContentTrackDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "windowSize": 200,
+                "windowDelta": 20
+              }
+            ]
     }
   ],
   "internetAccounts": [],
@@ -324,7 +329,7 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.54)",
+    "name": "SubtiBrowse (v0.55)",
     "margin": 0,
     "views": [
       {
