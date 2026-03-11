@@ -19,7 +19,7 @@
           "main": "#06d6a0"
         },
         "quaternary": {
-          "main": "#003049"
+          "main": "#26547c"
         }
       }
     },
@@ -58,10 +58,6 @@
           "faiLocation": {
             "locationType": "UriLocation",
             "uri": "./data/168/168.fna.fai"
-          },
-          "metadataLocation": {
-            "locationType": "UriLocation",
-            "uri": "/path/to/fa.metadata.yaml"
           }
         },
         "displays": [
@@ -281,10 +277,6 @@
         "faiLocation": {
           "locationType": "UriLocation",
           "uri": "./data/168/168.fna.fai"
-        },
-        "metadataLocation": {
-          "locationType": "UriLocation",
-          "uri": "/path/to/fa.metadata.yaml"
         }
       },
             "displays": [
@@ -329,15 +321,16 @@
     },
     "minimized": false,
     "id": "som28W8AbRdxtMtSElJqD",
-    "name": "SubtiBrowse (v0.59)",
+    "name": "SubtiBrowse (v0.60)",
     "margin": 0,
     "views": [
       {
         "id": "JCFaygF3TSEHpjjRdvyYH",
+        "displayName": "168",
         "minimized": false,
         "type": "LinearGenomeView",
         "offsetPx": 0,
-        "bpPerPx": 3.0413625304136254,
+        "bpPerPx": 2.31033020718,
         "displayedRegions": [
           {
             "reversed": false,
@@ -357,7 +350,7 @@
               {
                 "id": "iKz01UHNOTAa2zzM9mSRB",
                 "type": "LinearReferenceSequenceDisplay",
-                "heightPreConfig": 50,
+                "heightPreConfig": 100,
                 "configuration": "168-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
                 "showForward": true,
                 "showReverse": true,
@@ -374,6 +367,7 @@
               {
                 "id": "NFyMxXU9qg6qnwHrmWPE6",
                 "type": "LinearBasicDisplay",
+                "heightPreConfig": 200,
                 "configuration": "168_sorted.gff-LinearBasicDisplay"
               }
             ]
@@ -388,6 +382,7 @@
               {
                 "id": "j4N3EAiK2tC1KfjZwIiX-",
                 "type": "LinearGCContentTrackDisplay",
+                "heightPreConfig": 100,
                 "configuration": "gc_content_168-LinearGCContentTrackDisplay",
                 "selectedRendering": "",
                 "resolution": 1,
